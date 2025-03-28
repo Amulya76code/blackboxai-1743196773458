@@ -3,14 +3,14 @@ import API from '../api.js';
 export default {
   async generateJobDescription(jobDetails) {
     try {
-      const response = await API.post('/generate-job-description', {
-        title: jobDetails.title,
-        company: jobDetails.company,
-        location: jobDetails.location,
-        type: jobDetails.type,
-        salary: jobDetails.salary,
-        experience: jobDetails.experience,
-        responsibilities: jobDetails.responsibilities,
+      const response = await API.post('/generate', { // Match your FastAPI endpoint
+        job_title: jobDetails.title,
+        company_name: jobDetails.company,
+        job_location: jobDetails.location,
+        employment_type: jobDetails.type,
+        salary_range: jobDetails.salary,
+        experience_level: jobDetails.experience,
+        key_responsibilities: jobDetails.responsibilities,
         requirements: jobDetails.requirements,
         benefits: jobDetails.benefits
       });
