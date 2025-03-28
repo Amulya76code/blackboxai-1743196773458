@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR APPLY</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👔</text></svg>">
+</head>
+<body class="bg-white">
+    <!-- Header will go here -->
+    <header class="sticky top-0 bg-white shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-8">
+                    <!-- Mobile menu button -->
+                    <button class="md:hidden mobile-menu-button p-2 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <a href="#" class="text-2xl font-bold text-blue-600">HR APPLY</a>
+                    <nav class="hidden mobile-menu md:flex space-x-8">
+                        <a href="#" class="text-gray-600 hover:text-blue-600">Products</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600">Solutions</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600">Resources</a>
+                        <a href="#" class="text-gray-600 hover:text-blue-600">Pricing</a>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Log in</a>
+                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Get started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero section will go here -->
+    <main>
+        <section class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Hire great people.<br>Faster.</h1>
+                    <p class="text-xl text-gray-600 mb-8">HR APPLY is the world's leading hiring and HR management platform.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700">Get started</a>
+                        <a href="#" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-md hover:bg-gray-50">Watch demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Job Description Generator Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto bg-gray-50 rounded-xl p-8 shadow-sm">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">Generate Job Description</h2>
+          
+          <form id="jobDescriptionForm" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="jobTitle" class="block text-sm font-medium text-gray-700 mb-1">Job Title*</label>
+                <input type="text" id="jobTitle" required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="e.g. Senior Software Engineer">
+              </div>
+
+              <div>
+                <label for="companyName" class="block text-sm font-medium text-gray-700 mb-1">Company Name*</label>
+                <input type="text" id="companyName" required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Your company name">
+              </div>
+
+              <div>
+                <label for="jobLocation" class="block text-sm font-medium text-gray-700 mb-1">Location Type*</label>
+                <select id="jobLocation" required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                  <option value="">Select location type</option>
+                  <option value="remote">Remote</option>
+                  <option value="onsite">On-site</option>
+                  <option value="hybrid">Hybrid</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="jobType" class="block text-sm font-medium text-gray-700 mb-1">Job Type*</label>
+                <select id="jobType" required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                  <option value="">Select job type</option>
+                  <option value="full-time">Full-time</option>
+                  <option value="part-time">Part-time</option>
+                  <option value="contract">Contract</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="salaryRange" class="block text-sm font-medium text-gray-700 mb-1">Salary Range</label>
+                <input type="text" id="salaryRange"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="e.g. $80,000 - $100,000">
+              </div>
+
+              <div>
+                <label for="experienceLevel" class="block text-sm font-medium text-gray-700 mb-1">Experience Level</label>
+                <select id="experienceLevel"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                  <option value="">Select experience level</option>
+                  <option value="entry">Entry Level</option>
+                  <option value="mid">Mid Level</option>
+                  <option value="senior">Senior Level</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="jobResponsibilities" class="block text-sm font-medium text-gray-700 mb-1">Key Responsibilities*</label>
+              <textarea id="jobResponsibilities" rows="3" required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                placeholder="List key responsibilities (one per line)"></textarea>
+            </div>
+
+            <div>
+              <label for="jobRequirements" class="block text-sm font-medium text-gray-700 mb-1">Requirements*</label>
+              <textarea id="jobRequirements" rows="3" required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                placeholder="List requirements (one per line)"></textarea>
+            </div>
+
+            <div>
+              <label for="jobBenefits" class="block text-sm font-medium text-gray-700 mb-1">Benefits</label>
+              <textarea id="jobBenefits" rows="2"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                placeholder="List benefits (optional)"></textarea>
+            </div>
+
+            <button type="submit"
+              class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+              Generate Description
+            </button>
+          </form>
+
+          <div id="generatedResult" class="mt-8 hidden">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Generated Description</h3>
+            <div class="flex space-x-2 mb-4">
+              <button id="editModeBtn" class="px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                <i class="fas fa-edit mr-1"></i> Edit Mode
+              </button>
+              <button id="previewModeBtn" class="px-3 py-1 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">
+                <i class="fas fa-eye mr-1"></i> Preview
+              </button>
+            </div>
+            
+            <div id="editableDescription" contenteditable="true" 
+              class="p-4 bg-white border border-gray-200 rounded-md min-h-32 prose max-w-none focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            
+            <div class="flex space-x-4 mt-4">
+              <button id="saveDescriptionBtn" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
+                <i class="fas fa-save mr-1"></i> Save Description
+              </button>
+              <button id="regenerateBtn" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                <i class="fas fa-sync-alt mr-1"></i> Regenerate
+              </button>
+              <button id="copyDescriptionBtn" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300">
+                <i class="fas fa-copy mr-1"></i> Copy to Clipboard
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Saved Descriptions Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-xl p-8 shadow-sm">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">Saved Job Descriptions</h2>
+          <div id="savedDescriptions" class="space-y-4">
+            <!-- Will be populated by JavaScript -->
+            <p class="text-gray-500">Loading saved descriptions...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
