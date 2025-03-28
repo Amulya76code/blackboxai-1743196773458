@@ -1,5 +1,5 @@
 // API Service Module
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'http://localhost:8000'; // Your FastAPI endpoint
 
 // Add authentication headers if needed
 const getAuthHeaders = () => {
